@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import "./NewPost.css"
 import axios from 'axios'
 
@@ -14,7 +14,8 @@ const NewPost = () => {
         console.log(formData)
     }
     /* send object using API */
-    const handleSend = () => {
+    const handleSend = (e) => {
+        e.preventDefault()
         axios.post("https://jsonplaceholder.typicode.com/posts")
             .then((res) => {
                 console.log(res)

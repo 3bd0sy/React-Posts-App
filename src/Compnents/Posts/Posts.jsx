@@ -19,21 +19,7 @@ const Posts = () => {
         navigate(`/details/${id + 1}`)
     }
 
-    // edit post
-    // const handleEdit = (e, id) => {
-    //     e.stopPropagation()
-    //     navigate(`/edit/${id + 1}`)
-    // }
 
-    // const handleDelete = (e, id) => {
-    //     e.stopPropagation()
-    //     axios.delete(`https://jsonplaceholder.typicode.com/posts/${id + 1}`)
-    //         .then((result) => {
-    //             console.log(result.status)
-    //             alert(`post has been deleted ...\n code: ${result.status}`)
-    //         })
-    //         .catch((err) => console.log(err))
-    // }
     return (
         <div className='Posts'>
             {/**Title */}

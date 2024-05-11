@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Footer.css"
 import { MessageCircleMore } from 'lucide-react'
 const Footer = () => {
@@ -8,12 +7,12 @@ const Footer = () => {
             {/**Left */}
             <div className='FLeft'>
                 <div className='FLeft-Top'>
-                <MessageCircleMore size={32} />
-                <h1>Post App</h1>
+                    <MessageCircleMore size={32} />
+                    <h1>Post App</h1>
                 </div>
-               <p>
+                <p>
                     Copyright @ 1999-2024. Abdulbasit Abdulghani. All rights reserved.
-               </p>
+                </p>
                 <p>
                     Read the complete Terms of Use for more information.
                 </p>

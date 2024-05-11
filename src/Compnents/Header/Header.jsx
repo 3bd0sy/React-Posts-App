@@ -1,6 +1,4 @@
-import React from 'react'
 import { MessageCircleMore } from 'lucide-react'
-
 import "./Header.css"
 import { useNavigate } from 'react-router-dom'
 const Header = () => {

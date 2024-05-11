@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../../Compnents/Header/Header'
 import Footer from '../../Compnents/Footer/Footer'
 import Posts from '../../Compnents/Posts/Posts'
@@ -6,9 +5,9 @@ import Posts from '../../Compnents/Posts/Posts'
 const Home = () => {
   return (
     <div>
-        <Header/>
-        <Posts/>
-        <Footer/>
+      <Header />
+      <Posts />
+      <Footer />
     </div>
   )
 }

@@ -15,7 +15,6 @@ const Edit = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
-
     useEffect(() => {
         axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
             .then((res) => {
