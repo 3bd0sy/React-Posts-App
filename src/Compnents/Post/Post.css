@@ -1,0 +1,103 @@
+.SinglePost {
+    min-height: 75vh;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.SinglePTitle {
+    width: 100vw;
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.SinglePData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SinglePData>div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.SinglePCard {
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    width: 720px;
+    height: 200px;
+    border-radius: 0.25rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 1.5rem;
+    box-shadow: rgba(76, 76, 76, 0.3) 0px 19px 38px, rgba(80, 250, 210, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.inputDiv>h3 {
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.inputDiv>P {
+    color: rgba(156, 163, 175, 1);
+
+}
+
+.SinglePCard>div {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+/* .SinglePCard>div>button {
+    background-color: rgba(167, 139, 250, 1);
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+} */
+.PostBtn{
+    display: flex;
+    flex-direction: row;
+}
+.PostBtn>button{
+    background-color: rgba(167, 139, 250, 1);
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 600;
+    width: 150px;
+}
+
+.SinglePCard>div>button:hover {
+    cursor: pointer;
+    background-color: rgb(193, 178, 241)
+}

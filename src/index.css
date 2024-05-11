@@ -1,0 +1,26 @@
+body,
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px;
+}
+
+
+body::-webkit-scrollbar {
+  color: white;
+  background-color: #5b5959;
+  display: none;
+}
+
+.btn {
+  background-color: rgba(167, 139, 250, 1);
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-weight: 600;
+}

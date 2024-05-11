@@ -1,0 +1,45 @@
+.Header {
+     position: fixed;
+    top: 0px;
+    width: 100vw;
+    background-color: rgb(221, 239, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    color: white;
+    background-color: #333;
+    
+}
+
+.HLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+
+.HRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+.HRight>button{
+    background-color: rgba(167, 139, 250, 1);
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.HRight>button:hover{
+    cursor: pointer;
+}
