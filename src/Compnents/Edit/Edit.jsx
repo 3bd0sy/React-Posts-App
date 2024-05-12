@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import PostForm from '../PostForm/PostForm'
 
 const Edit = () => {
     const [formData, setFormData] = useState({
@@ -36,20 +37,7 @@ const Edit = () => {
             .catch((err) => console.log(err))
     }
     return (
-        <div className='NewPost'>
-            <form >
-                <div>
-                    <label htmlFor="">Post Title</label>
-                    <input className='input' onChange={handleChange} value={formData.title} name='title' type="text" />
-                </div>
-                <textarea value={formData.body} onChange={handleChange} name="body" style={{ width: "80%", resize: "none" }} rows={7}></textarea>
-                <div>
-                    <button onClick={(e) => handleUpdate(e)} className='btn'>
-                        Update Post
-                    </button>
-                </div>
-            </form>
-        </div>
+        <PostForm formData={formData} handleSend={handleUpdate} handleChange={handleChange} buttonText={"Update Post"} />
     )
 }
 

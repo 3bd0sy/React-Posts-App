@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import "./NewPost.css"
 import axios from 'axios'
+import PostForm from '../PostForm/PostForm'
 
 const NewPost = () => {
     const [formData, setFormData] = useState({
@@ -16,32 +17,21 @@ const NewPost = () => {
     /* send object using API */
     const handleSend = (e) => {
         e.preventDefault()
-        axios.post("https://jsonplaceholder.typicode.com/posts")
-            .then((res) => {
-                console.log(res)
-                alert("Post hase been ceated successfully")
-                setFormData({
-                    title: "",
-                    body: ""
+        /*handle empty field */
+        if (formData.title.length + formData.body.length > 5)
+            axios.post("https://jsonplaceholder.typicode.com/posts", formData)
+                .then((res) => {
+                    console.log(res)
+                    alert("Post hase been ceated successfully")
+                    setFormData({
+                        title: "",
+                        body: ""
+                    })
                 })
-            })
-            .catch((err) => console.log(err))
+                .catch((err) => console.log(err))
     }
     return (
-        <div className='NewPost'>
-            <form>
-                <div className=''>
-                    <label htmlFor="">Post Title</label>
-                    <input className='input' onChange={handleChange} value={formData.title} name='title' type="text" />
-                </div>
-                <textarea value={formData.body} onChange={handleChange} name="body" style={{ width: "80%", resize: "none" }} rows={7}></textarea>
-                <div>
-                    <button onClick={handleSend} className='btn'>
-                        Send Post
-                    </button>
-                </div>
-            </form>
-        </div>
+        <PostForm formData={formData} handleSend={handleSend} handleChange={handleChange} buttonText={"Send Post"} />
     )
 }
 

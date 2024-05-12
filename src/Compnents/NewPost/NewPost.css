@@ -11,7 +11,7 @@
 .NewPost>form {
     background-color: rgba(17, 24, 39, 1);
     width: 650px;
-    height: 280px;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,17 +33,20 @@
 .input {
     width: 40%;
     height: 20px;
-    font-size: 100%;
+    font-size: large;
     padding: 0.8em;
     outline: none;
     border: 2px solid rgb(200, 200, 200);
     background-color: white;
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
+ label{
+font-size: x-large;
+}
 .NewPost>form>textarea{
     background-color: white;
     outline: none;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 1rem;
 }

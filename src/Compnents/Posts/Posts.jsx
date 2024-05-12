@@ -31,8 +31,7 @@ const Posts = () => {
                     <div> Fetching Data ... </div> :
                     posts.slice(0, 20).map((element, id) => {
                         return <div onClick={() => handleClick(id)} className='PCard' key={id}>
-
-                            <h3>
+                            <h3 style={{ textTransform: "capitalize" }}>
                                 {element.title.length <= 30 ?
                                     element.title :
                                     element.title.slice(0, 30) + "..."}

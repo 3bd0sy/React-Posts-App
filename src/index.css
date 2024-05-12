@@ -24,3 +24,7 @@ body::-webkit-scrollbar {
   text-align: center;
   font-weight: 600;
 }
+
+.pointer{
+  cursor: pointer;
+}

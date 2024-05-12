@@ -1,6 +1,6 @@
 import { MessageCircleMore } from 'lucide-react'
 import "./Header.css"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 const Header = () => {
     const navigate = useNavigate()
 
@@ -14,7 +14,11 @@ const Header = () => {
             <div className='HLeft'>
                 {/**Logo */}
                 <MessageCircleMore size={32} />
-                <h1>Post App</h1>
+                <h1>
+                    <Link to="/" style={{color:"white" , textDecoration:"none"}}>
+                        Post App
+                    </Link>
+                </h1>
             </div>
 
 

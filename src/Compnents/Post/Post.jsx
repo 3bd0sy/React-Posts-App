@@ -17,7 +17,7 @@ const Post = () => {
 
 
     const handleUpdate = (id) => {
-        navigate(`/edit/${id}`)
+        navigate(`/update/${id}`)
     }
     const handleDelete = (id) => {
         axios.delete(`https://jsonplaceholder.typicode.com/posts/${id + 1}`)
@@ -40,7 +40,7 @@ const Post = () => {
                     <div>
                         < div className='SinglePCard' key={id}>
                             <div className='inputDiv'>
-                                <h3>
+                                <h3 style={{textTransform :"capitalize"}}>
                                     {post.title.length <= 30 ?
                                         post.title :
                                         post.title.slice(0, 30) + "..."}

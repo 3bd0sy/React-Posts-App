@@ -14,7 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="details/:id" element={<Details />} />
           <Route path="add-post" element={<AddPost />} />
-          <Route path="edit/:id" element={<EditPost />} />
+          <Route path="update/:id" element={<EditPost />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Routes>
       </BrowserRouter>
