@@ -25,6 +25,88 @@ body::-webkit-scrollbar {
   font-weight: 600;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .bars {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .HRight {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  .HRight-Show {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .FRight {
+    display: none;
+  }
+
+  .FLeft>p {
+    font-size: smaller;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .Footer {
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .FCenter {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .FLeft>p {
+    font-size: small;
+    width: 250px;
+    overflow-wrap: break-word;
+  }
+
+  .FLeft {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .HLeft>h1 {
+    font-size: large;
+    margin-left: 10px;
+  }
+
+  .HLeft {
+    margin-left: 10px;
+  }
+
+  .HRight-Show {
+    width: 120px;
+    padding-bottom: 5px;
+  }
+
+  .FCenter {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+
+  }
+
+  .FCenter>h2 {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
 }

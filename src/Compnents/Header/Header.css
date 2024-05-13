@@ -1,5 +1,5 @@
 .Header {
-     position: fixed;
+    position: fixed;
     top: 0px;
     width: 100vw;
     background-color: rgb(221, 239, 239);
@@ -9,7 +9,7 @@
     height: 60px;
     color: white;
     background-color: #333;
-    
+
 }
 
 .HLeft {
@@ -27,7 +27,7 @@
     margin-right: 50px;
 }
 
-.HRight>button{
+.HRight>button {
     background-color: rgba(167, 139, 250, 1);
     border: none;
     outline: none;
@@ -40,6 +40,56 @@
     font-weight: 600;
 }
 
-.HRight>button:hover{
+.HRight>button:hover {
     cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+.bars {
+    width: 30px;
+    height: 30px;
+    display: none;
+    z-index: 10;
+}
+.bars>svg{
+    fill: rgba(167, 139, 250, 1);
+}
+
+
+
+
+.HRight-Show {
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #333;
+    width: 150px;
+    height: 350px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+
+.HRight-Show>button {
+    background-color: rgba(167, 139, 250, 1);
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-weight: 600;
+    width: 100px;
+    margin: 2px;
+}
+
+.HRight-Show>button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
