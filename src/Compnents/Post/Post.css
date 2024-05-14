@@ -65,19 +65,7 @@
     margin-top: 5px;
 }
 
-/* .SinglePCard>div>button {
-    background-color: rgba(167, 139, 250, 1);
-    border: none;
-    outline: none;
-    display: inline-block;
-    border-radius: 5px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    font-weight: 600;
-    width: 150px;
-} */
+
 .PostBtn{
     display: flex;
     flex-direction: row;

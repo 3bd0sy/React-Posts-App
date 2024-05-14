@@ -1,7 +1,5 @@
 .Footer {
-    /* position: sticky;
-    bottom: 0; */
-    padding: 20px;
+    padding:10px 0px 10px 0px;
     width: 100vw;
     height: 150px;
     display: flex;

@@ -39,11 +39,6 @@ const Posts = () => {
                             <p>
                                 {element.body}
                             </p>
-
-                            {/* <div>
-                                <button onClick={(e) => handleEdit(e, element.id)}>edit</button>
-                                <button onClick={(e) => handleDelete(e, element.id)}>delete</button>
-                            </div> */}
                         </div>
                     })
                 }

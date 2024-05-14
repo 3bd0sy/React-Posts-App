@@ -39,6 +39,15 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+
+  .NewPost>form {
+    width: 90vw;
+  }
+
+  .SinglePCard {
+    width: 80vw;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -53,6 +62,11 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+  .SinglePCard {
+    width: 80vw;
+    height: auto;
+  }
+
   .FLeft>p {
     font-size: smaller;
   }
@@ -63,6 +77,7 @@ body::-webkit-scrollbar {
   .Footer {
     flex-direction: column;
     height: 200px;
+
   }
 
   .FCenter {
@@ -108,5 +123,49 @@ body::-webkit-scrollbar {
   .FCenter>h2 {
     grid-column: 1 / span 2;
     justify-self: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .PData {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .PData {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .PCard {
+    width: 200px;
+  }
+
+  
+
+  .NewPost>form {
+    height: auto;
+  }
+
+  .NewPost>form>textarea {
+    height: 200px;
+  }
+
+  .NewPost>form>div>label {
+    font-size: large;
+  }
+  .NewPost>form>div>button {
+  margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .PCard {
+    width:80vw;
+  }
+  .PostBtn>button {
+    width: 100px;
   }
 }
